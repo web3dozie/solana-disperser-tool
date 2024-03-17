@@ -3,6 +3,7 @@ from fund_clusters import load_and_fund_clusters
 from send_to_grifter import send_funds_to_grifter
 
 
+
 def main():
     print('This script lets you create SOL sybil clusters')
     print('The default cluster size is 100 wallets')
