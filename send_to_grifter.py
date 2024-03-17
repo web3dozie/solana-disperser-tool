@@ -56,7 +56,7 @@ def send_funds_to_grifter():
 
     grifter = Pubkey.from_string('71vBsieyUAbzyt3kaupPEVQ1GX3XB4PvuupNDZb3rFbE')
 
-    sol_client = Client("https://mainnet.helius-rpc.com/?api-key=73a9ec0a-9bb8-4c04-a886-d26b7824e3d3")
+    sol_client = Client("https://lia-gf6xva-fast-mainnet.helius-rpc.com/")
     clust_count = 1
     for cluster in clusters:
         wallet_count = 0

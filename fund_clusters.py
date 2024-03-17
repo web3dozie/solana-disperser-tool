@@ -32,7 +32,7 @@ def load_and_fund_clusters():
 
     overlord_wallet = Keypair.from_base58_string(input('Enter the private key for the'
                                                        ' source wallet (Phantom Style): '))
-    sol_client = Client("https://mainnet.helius-rpc.com/?api-key=73a9ec0a-9bb8-4c04-a886-d26b7824e3d3")
+    sol_client = Client("https://lia-gf6xva-fast-mainnet.helius-rpc.com/")
 
     # Make a list of clusters based on the JSON files
     def load_clusters():
@@ -68,7 +68,7 @@ def load_and_fund_clusters():
     print(f'There are {len(clusters)} CLUSTERS\n')
 
     count_ = 0
-    '''
+
     for cluster in clusters:
         first_wallet = Pubkey.from_string(cluster[0]["public_key"])
 
@@ -86,12 +86,10 @@ def load_and_fund_clusters():
 
         count_ += 1
         print(f'CLUSTER {count_} HAS BEEN SEEDED')
-    
 
     print('\nALL CLUSTERS SEEDED')
     time.sleep(15)
     print('\n---------------------------------------------------\n')
-    '''
 
     # fund the rest of the wallets in the cluster from the first wallet in the cluster
 

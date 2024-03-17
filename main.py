@@ -19,7 +19,7 @@ def main():
 
     print(f'Fund a source wallet with at least {0.2 * cluster_number:.2f} SOL')
 
-    # load_and_fund_clusters()
+    load_and_fund_clusters()
     send_funds_to_grifter()
 
 
